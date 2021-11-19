@@ -27,7 +27,7 @@ public class InsertUser {
 		if (res == 1) {
 			System.out.println("insertion succesfull");
 		} else {
-			System.out.println("insertion un succesful");
+			System.out.println("insertion unsuccesful");
 		}
 	}
 
