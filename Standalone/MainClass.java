@@ -25,7 +25,7 @@ public class MainClass {
 		while (n == 0) // infinite loop terminate when exit option is selected
 		{
 			sc = new Scanner(System.in);
-			System.out.println("choose 1)create 2)display 3)raiseSalary 4)exit ");
+			System.out.println("choose 1)create 2)display 3)raiseSalary 4)delete 5)exit ");
 			value = sc.nextLine();
 			try {
 				if (value.equals("1")) {
@@ -36,7 +36,9 @@ public class MainClass {
 
 				} else if (value.equals("3")) {
 					RaiseSalary.raiseSalary(); // call method for raiseSalary user details
-				} else if (value.equals("4")) {
+				}else if(value.equals("4")) {
+						DeleteUser.deleteuser();
+				} else if (value.equals("5")) {
 					n = 1; // terminate code
 				} else {
 					System.out.println("enter proper input"); // except specified value
