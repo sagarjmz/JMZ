@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Style sheet" href="JMZ style-sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            background-color: darkgrey;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+
+            font-family: 'Quicksand' , sans-serif;
+            font-weight: bold;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows:15% auto;
+
+            gap: 5px;
+
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container div{
+            padding: 10px;
+            border: 1px solid black;
+            
+        }
+        /* .s {
+            display: inline;
+            padding: 2px;
+            margin-top: auto;
+            
+        } */
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 8;
+            background-color: cornflowerblue;
+            
+        }
+        .content-1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            border: none;
+            background-color: rgb(45, 167, 45);
+
+            /* display: grid;
+            grid-template-rows: 25% 25% 25% 25%; */
+
+            /* gap: 5px;
+
+            padding: 10px;
+            box-sizing: border-box; */
+        }
+        .content-2{
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+        .content-3{
+            grid-column-start: 6;
+            grid-column-end: 8;
+            background-color: lightcyan;
+
+            display: grid;
+            grid-template-rows: 50% 50%;
+
+            gap: 5px;
+
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .fa {
+            padding: 5px;
+            text-align: center;
+            margin: 5px 2px;
+            font-size: 20px;
+            width: 30px;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+          
+        <div style="border: none;" class="header">
+            <h1  style="color:rgb(206, 6, 6);">JMZ Technology Pvt. Ltd.</h1>
+            <ul style="float: right; margin-top: -50px; margin-right: 10px;">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a> 
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>  
+                <a href="https://www.twitter.com/" class="fa fa-twitter"></a>  
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="fa fa-google"> </a> 
+                <a href="https://www.linkedin.com/login" class="fa fa-linkedin"></a>  
+            </ul>
+        </div>
+
+        <div style = "border: none;" class="content-1">
+            <li><a href="#home" style="color: rgb(29, 27, 27);">Home</a></li>
+            <li><a href="" style="color: rgb(29, 27, 27);">Create</a></li>
+            <li><a href="" style="color: rgb(29, 27, 27);">Dispaly Employee Data</a></li>
+            <li><a href="" style="color: rgb(29, 27, 27);">Raise Salary</a></li>
+            <li><a href="" style="color: rgb(29, 27, 27);">Delete Data</a></li>
+           
+        </div>
+
+        <div style="border: none;" class="content-2">
+
+            <h1 style="color: rgb(25, 0, 255);" id="home">Home</h1>
+            <p> JMZ Technology Pvt. Ltd. was established in 2019 in Bangaluru, India. It was establishedby by two friends. 
+                It first started it's business in Cargo industry and later enter the IT business. </p>
+            
+            <br><h1 style="color: rgb(25, 0, 255);" id = "service">Service</h1>
+            <p> we Provide many services. Full list of industries...</p>
+            <li>Air Freight</li>
+            <li>Sea Freight</li>
+            <li>Chemicals</li>
+            <li>Automotive</li>
+            <li>Consultancy</li>
+            <li>Custom Services</li>
+
+            <br><h1 style="color: rgb(25, 0, 255);" id = "aboutUs">About Us</h1>
+            <p>The company combines its core products of Air Freight, Ocean Freight, and Logistics to deliver globally integrated, 
+                tailor-made end-to-end solutions for eleven core industries. Drawing on in-depth industry know-how and customized IT systems, 
+                Panalpina manages the needs of its customers' supply chains, no matter how demanding they might be.. </p>
+            
+            <br><h1 style="color: rgb(25, 0, 255);" id="contract">Contract Number</h1>
+            <p> 243, 9th Main Rd, HRBR Layout 1st Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560047
+                +91-80-40943856
+                Ras Al Khor – Al Awir & Jebel Ali Free Zone, Dubai, U.A.E
+                +91-508709733</p>
+                <br><br><br><br>
+        </div>
+
+        <div style="border: none;" class="content-3">
+            <div class="content-3-1"><a href=""  width=100% height=100%>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="No image"  width=100% height=100%>
+            </a></div>  
+            <div class="content-3-2"><a href="" width=100% height=100%>
+                <img src="https://www.industrialempathy.com/img/remote/ZiClJf-640w.avif" alt="No image"  width=100% height=100%>
+            </a></div>  
+        </div>    
+
+    </div>
+</body>
+</html>
