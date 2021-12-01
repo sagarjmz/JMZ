@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+form {
+	border-color: green;
+	border-style: solid;
+	padding: 100px;
+	display: inline-block;
+	font-size: 25px;
+	text-align: center;
+	
+	margin-left:30%;
+}
+
+
+.s {
+	padding: 5px;
+	color: black;
+	font-size: 17px;
+	width: 150px;
+	background-color: white;
+	text-decoration: none;
+
+}
+.s:hover{
+	background-color: green;
+	color:white;
+}
+
+input:hover {
+	border-color: green;
+}
+
+label:hover {
+	font-size: 26px;
+}
+
+input {
+	font-size: 20px;
+	padding: 10px;
+	width: 200px;
+	
+}
+
+a {
+	border: 2px solid green;
+	padding: 5px;
+	font-size: 17px;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	
+}
+
+</style>
+</head>
+<body>
+	<h1 style="text-align:center">JMZ Technology Login Form</h1>
+	
+	<form action="../Login" name="form" method="get">
+		<label>Enter name : </label> &nbsp;<input type="text" name="uname" ><br><!-- pattern="[A-Za-z]+" -->
+		<br> <label>Enter pwd :</label> &nbsp;&nbsp;&nbsp;<input
+			type="password" name="pwd" ><br> <br> <input
+			class="s" type="submit" value="Login">&nbsp; 
+<!-- 		<a href="signup.html">SignUp</a> 	 -->
+
+	</form>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
