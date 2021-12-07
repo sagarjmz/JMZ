@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #456;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #28d;
+}
+
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+
+</style>
+</head>
+<body style="font-family:Verdana; background-color: #28d; ">
+
+
+
+
+  <div class="main" style="background-color:#080400; background-repeat: no-repeat; width: 60%; height: 83%; position: relative; margin-top: 10%; margin-left: 20%; border: 11px solid white; color: cyan;">
+    
+    <div class="login">
+  <div style="margin-top: 7%;" class="login-triangle"></div>
+  
+  <h2 class="login-header" style="width:160%; margin-left:-30%;">USER LOG IN</h2>
+
+  <form action="../log" method="post" style="" >
+    <div class="login-container" style="color: black; margin-left: -30%; width:160%">
+      <p><input name = "uname" type="text" placeholder="Enter Username" required></p>
+      <p><input name = "psw" type="password" placeholder="Enter Password"required></p>
+     
+  
+    <p><input type="submit" value="LOG IN"></p>
+    <p><input style = "background-color: darkgrey;" type="reset" value="Reset"></p>
+   <!--  <p><a href= "Signup.html" ><input style = "background-color: limegreen;" type="button" value="Sign up"></a></p>
+ -->     
+     </div>
+  </form>
+</div>
+   
+  </div>
+
+  
+</div>
+
+
+</body>
+</html>
