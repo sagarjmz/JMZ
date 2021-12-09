@@ -1,0 +1,186 @@
+.imgs,
+h1 {
+    text-align: center
+}
+
+.feature {
+    margin-bottom: 60px
+}
+
+.btn-signup {
+    border-radius: 22px !important;
+    font-size: 20px !important;
+    box-shadow: #e4e8f3 4px 4px 4px 2px
+}
+
+.imgs {
+    width: 200px;
+    height: 200px
+}
+
+.content-box {
+    margin-top: 80px
+}
+
+button,
+textarea {
+    font-size: 17px;
+    margin: 15px 0 0;
+    font-family: Barlow, sans-serif !important
+}
+
+.footer-text,
+.footer-title {
+    color: #ccc
+}
+
+#regForm {
+    background-color: #fff;
+    margin: 100px auto;
+    font-family: Barlow, sans-serif !important;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .4)
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Barlow, sans-serif !important;
+    border: 2px solid #DEDEDE;
+    border-radius: 3px
+}
+
+.input-group-addon {
+    background-color: transparent;
+    border: transparent
+}
+
+.input-group-addon#addr {
+    vertical-align: top !important;
+    padding-top: 25px
+}
+
+#regForm input:focus,
+#regForm input:hover,
+#regForm textarea:focus,
+#regForm textarea:hover {
+    transition: .5s;
+    border: 2px solid #3fcaae
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #DEDEDE;
+    border-radius: 3px
+}
+
+input.invalid {
+    background-color: #fdd
+}
+
+.tab {
+    display: none
+}
+
+button {
+    background-color: #00E640;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer
+}
+
+.placeholder {
+    z-index: 5
+}
+
+button:hover {
+    opacity: .8
+}
+
+#prevBtn {
+    background-color: #bbb
+}
+
+.step,
+.step.finish {
+    background-color: #00E640
+}
+
+.step {
+    height: auto;
+    width: 80px;
+    margin: 0 5px;
+    border: none;
+    padding: 5px;
+    color: #FFF;
+    border-radius: 3px;
+    display: inline-block;
+    opacity: .5;
+    font-family: Barlow, sans-serif !important
+}
+
+.step.active {
+    opacity: 1
+}
+
+.form-group {
+    margin-bottom: 0
+}
+
+.radio-inline {
+    padding-top: 15px;
+    margin-left: 45px
+}
+
+.radio-inline input[type=radio] {
+    position: absolute;
+    margin-left: -35px !important;
+    width: 100%
+}
+
+#radio2 {
+    margin-left: -45px !important
+}
+
+.checkbox-inline input[type=checkbox] {
+    position: absolute;
+    margin-left: -40px !important
+}
+
+#check2 {
+    margin-left: -50px !important
+}
+
+.location h5 {
+    margin-top: 15px !important
+}
+
+h4.docs {
+    line-height: 3.9 !important;
+    margin: 0 0 15px !important
+}
+
+.documents {
+    border: none !important
+}
+
+@media only screen and (max-width:768px) {
+    h4.docs {
+        line-height: 1.6 !important;
+        margin: 0 0 15px !important
+    }
+    #regForm {
+        padding: 0;
+        width: 90%
+    }
+}
+
+.col-md-1 {
+    width: 6.66%
+}
