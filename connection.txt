@@ -1,0 +1,30 @@
+package com.dummy;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+
+public class Basic extends HttpServlet {
+
+    Connection connection = null;
+    String url="jdbc:mysql://localhost:3306/userdatabase";
+	String uname="root";
+	String password="Ailesh@22";
+	
+    public void init() throws ServletException {
+    	
+        try {
+        	Class.forName("com.mysql.cj.jdbc.Driver");
+        	connection = DriverManager.getConnection(url,uname,password);
+           
+        } catch (SQLException | ClassNotFoundException e1){
+        	e1.printStackTrace();
+        	}     
+        }
+    
+    }
+    
+
