@@ -1,7 +1,0 @@
-Which of the following option leads to the portability and security of Java?@Bytecode is executed by JVM@The applet makes the Java code secure and portable@Use of exception handling@Dynamic binding between objects@Bytecode is executed by JVM
-Which of the following is not a Java features?@Dynamic@Architecture Neutral@Use of pointers@Object-oriented@Use of pointers
-How much water is required to produce a page of the book@2@14@1@3@2
- _____ is used to find and fix bugs in the Java programs.@JVM@JRE@JDK@JDB@JDB
-Which of the following is a valid declaration of a char?@char ch = '\utea';@char ca = 'tea';@char cr = \u0223;@char cc = '\itea';@char ch = '\utea';
-
- 
