@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>EMPLOYEE_SYSTEM</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LogInValidate</display-name>
+    <servlet-name>LogInValidate</servlet-name>
+    <servlet-class>com.LOGIC.LogInValidate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogInValidate</servlet-name>
+    <url-pattern>/LogInValidate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Dashboard</display-name>
+    <servlet-name>Dashboard</servlet-name>
+    <servlet-class>com.LOGIC.Dashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Dashboard</servlet-name>
+    <url-pattern>/Dashboard</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Create</display-name>
+    <servlet-name>Create</servlet-name>
+    <servlet-class>com.LOGIC.Create</servlet-class>
+   
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Create</servlet-name>
+    <url-pattern>/Create</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Display</display-name>
+    <servlet-name>Display</servlet-name>
+    <servlet-class>com.LOGIC.Display</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Display</servlet-name>
+    <url-pattern>/Display</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>abcd</servlet-name>
+    <servlet-class>com.LOGIC.LogInValidate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abcd</servlet-name>
+    <url-pattern>/hi</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>abcdef</servlet-name>
+    <servlet-class>com.LOGIC.LogInValidate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abcdef</servlet-name>
+    <url-pattern>/ab</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RaiseSalary</display-name>
+    <servlet-name>RaiseSalary</servlet-name>
+    <servlet-class>com.LOGIC.RaiseSalary</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RaiseSalary</servlet-name>
+    <url-pattern>/RaiseSalary</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Delete</display-name>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>com.LOGIC.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/Delete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Create1</display-name>
+    <servlet-name>Create1</servlet-name>
+    <servlet-class>com.LOGIC.Create</servlet-class>
+    <init-param>
+		     <param-name>tsalary</param-name>
+		     <param-value>15000</param-value>
+		     </init-param>
+		      <init-param>
+		     <param-name>dsalary</param-name>
+		     <param-value>20000</param-value>
+		     </init-param>
+		      <init-param>
+		     <param-name>msalary</param-name>
+		     <param-value>30000</param-value>
+		     </init-param>
+
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Create1</servlet-name>
+    <url-pattern>/create</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+    <description></description>
+    <display-name>RaiseSalary2</display-name>
+    <servlet-name>RaiseSalary2</servlet-name>
+    <servlet-class>com.LOGIC.RaiseSalary</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RaiseSalary2</servlet-name>
+    <url-pattern>/raisesalary</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RaiseSalary3</display-name>
+    <servlet-name>RaiseSalary3</servlet-name>
+    <servlet-class>com.LOGIC.RaiseSalary</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RaiseSalary3</servlet-name>
+    <url-pattern>/xyz</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Delete1</display-name>
+    <servlet-name>Delete1</servlet-name>
+    <servlet-class>com.LOGIC.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete1</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
