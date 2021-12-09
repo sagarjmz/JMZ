@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 @WebServlet("/FileServlet")
@@ -20,8 +21,10 @@ public class FileServlet extends HttpServlet {
 		{
 		FileOperation.mainEntry();
 		}
-		request.setAttribute("json",FileOperation.s1[0] );
-		System.out.println(FileOperation.s1[0]);
+		HttpSession session = request.getSession();
+	
+		session.setAttribute("json",FileOperation.s1 );
+//		System.out.println(FileOperation.s1[0]);
 		request.setAttribute("questions",FileOperation.list );
 		RequestDispatcher rd = request.getRequestDispatcher("jsp/view.jsp");
 		rd.forward(request, response);

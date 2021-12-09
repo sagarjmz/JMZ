@@ -13,7 +13,7 @@ import java.util.Scanner;
 import com.google.gson.Gson;
 
 public class FileOperation {
-
+static int i=0;
 	static List list = new LinkedList();
 	static int mark = 0;
 	static String aNs;
@@ -23,7 +23,7 @@ public class FileOperation {
 static String s1 [] = new String[5];
 	public static void mainEntry() {
 
-		for (int z = 0; z < 2; z++) {
+		for (int z = 0; z < 5; z++) {
 			try {
 				randomLine();
 				System.out.print("randomLine");
@@ -67,49 +67,55 @@ static String s1 [] = new String[5];
 		System.out.println(s[2]);
 		// String qsn, String oOne, String oTwo, String oThree, String oFour, String ans
 		System.out.println(list.size());
-		if (list.size() == 0) {
+		
+		if (list.size() < 5) {
 			q = new Questions(s[0], s[1], s[2], s[3], s[4], s[5]);
 			list.add(q);
-			s1[0] = new Gson().toJson(q);
+			s1[i] = new Gson().toJson(q);
+			i++;
 			System.out.println(s1[0]+": in FileOperation");
+			System.out.println(s1[1]+": in FileOperation");
+			System.out.println(s1[2]+": in FileOperation");
+			System.out.println(s1[3]+": in FileOperation");
+			System.out.println(s1[4]+": in FileOperation");
 			
 		}
 
 	}
 
-	public static void randomLineone() {
-
-		String[] a = result.split("@");
-
-		Questions q = new Questions(a[0], a[1], a[2], a[3], a[4], a[5]);
-		System.out.println("Questions:");
-		System.out.println("Q - " + a[0]);
-		System.out.println("");
-		System.out.println("A- " + a[1]);
-		System.out.println("B- " + a[2]);
-		System.out.println("C- " + a[3]);
-		System.out.println("D- " + a[4]);
-		System.out.println("");
-		if (a[5].equals(a[1])) {
-			aNs = "a";
-		} else if (a[5].equals(a[2])) {
-			aNs = "b";
-		} else if (a[5].equals(a[3])) {
-			aNs = "c";
-		} else {
-			aNs = "d";
-		}
-		System.out.print("answer : ");
-		Scanner sc = new Scanner(System.in);
-		String s = sc.next();
-		if (s.equalsIgnoreCase(aNs)) {
-			mark++;
-			System.out.println("Correct Answer");
-		} else {
-			System.out.println("Wrong answer,moving to next Question ");
-		}
-		System.out.println("Score: " + mark + "/2");
-
-	}
+//	public static void randomLineone() {
+//
+//		String[] a = result.split("@");
+//
+//		Questions q = new Questions(a[0], a[1], a[2], a[3], a[4], a[5]);
+//		System.out.println("Questions:");
+//		System.out.println("Q - " + a[0]);
+//		System.out.println("");
+//		System.out.println("A- " + a[1]);
+//		System.out.println("B- " + a[2]);
+//		System.out.println("C- " + a[3]);
+//		System.out.println("D- " + a[4]);
+//		System.out.println("");
+//		if (a[5].equals(a[1])) {
+//			aNs = "a";
+//		} else if (a[5].equals(a[2])) {
+//			aNs = "b";
+//		} else if (a[5].equals(a[3])) {
+//			aNs = "c";
+//		} else {
+//			aNs = "d";
+//		}
+//		System.out.print("answer : ");
+//		Scanner sc = new Scanner(System.in);
+//		String s = sc.next();
+//		if (s.equalsIgnoreCase(aNs)) {
+//			mark++;
+//			System.out.println("Correct Answer");
+//		} else {
+//			System.out.println("Wrong answer,moving to next Question ");
+//		}
+//		System.out.println("Score: " + mark + "/2");
+//
+//	}
 
 }
