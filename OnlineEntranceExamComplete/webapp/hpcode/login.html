@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+	rel="stylesheet" />
+<style type="text/css">
+#bghtml {
+	background-color: #3f51b5;
+}
+</style>
+</head>
+<body>
+	<section class="flex justify-center items-center h-screen" id="bghtml">
+		<div class="max-w-md w-full bg-white rounded p-6 space-y-4">
+			<div class="mb-4">
+				<h2 class="text-xl font-bold">Take our test</h2>
+			</div>
+			<form action="./../FileServlet">
+				<div>
+					<input
+						class="
+                w-full
+                p-4
+                text-sm
+                bg-gray-50
+                focus:outline-none
+                border border-gray-200
+                rounded
+                text-gray-600
+              "
+						type="text" placeholder="Email" name="email" />
+				</div>
+				<br />
+				<div>
+					<a href="./JavaScript QUiz/start.html">
+						<button
+							class="
+                  w-full
+                  py-4
+                  bg-blue-600
+                  hover:bg-blue-700
+                  rounded
+                  text-sm
+                  font-bold
+                  text-gray-50
+                  transition
+                  duration-200
+                ">
+							Submit</button>
+					</a>
+				</div>
+			</form>
+			
+		</div>
+	</section>
+</body>
+</html>
